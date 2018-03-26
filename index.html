@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Activity Heatmap</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./css/cal-heatmap.css" />
+    <script type="text/javascript" src="./js/cal-heatmap.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+</head>
+
+<body>
+    <div id="cal-heatmap"></div>
+    <script type="text/javascript">
+        var cal = new CalHeatMap();
+        cal.init({
+            itemSelector: "#cal-heatmap",
+            domain: "week",
+            data: "data/datas-years.json",
+            start: new Date(2000, 0, 5),
+            cellSize: 10,
+            range: 2,
+            verticalOrientation: true,
+            domainDynamicDimension: false,
+            previousSelector: "#cal-heatmap-PreviousDomain-selector",
+            nextSelector: "#cal-heatmap-NextDomain-selector",
+            label: {
+                position: "right",
+                rotate: "left",
+                offset: {
+                    x: 0,
+                    y: 15
+                }
+            },
+            domainLabelFormat: function (date) {
+                moment.locale("en");
+                return moment(date).format("MMMM").toUpperCase();
+            },
+            legend: [20, 40, 60, 80]
+        });
+    </script>
+</body>
+
+</html>
