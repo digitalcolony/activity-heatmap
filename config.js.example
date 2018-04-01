@@ -1,0 +1,19 @@
+// MySQL settings
+const SERVERNAME = "";
+const USERNAME = "";
+const PASSWORD = "";
+const DBNAME = "";
+const QUERY =
+  "SELECT UNIX_TIMESTAMP(someDate) AS TS, COUNT(*) AS Num FROM tbl GROUP BY UNIX_TIMESTAMP(someDate)";
+
+// Save DB output to JSON file for Cal-Heatmap
+const JSONFILE = "data/meetups.json";
+
+module.exports = {
+  SERVERNAME,
+  USERNAME,
+  PASSWORD,
+  DBNAME,
+  QUERY,
+  JSONFILE
+};

@@ -1,0 +1,22 @@
+{
+  "name": "activity-heatmap",
+  "version": "1.0.0",
+  "description": "Sandbox to create Activity Heatmap charts using [Cal-Heatmap](https://github.com/wa0x6e/cal-heatmap).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalcolony/activity-heatmap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digitalcolony/activity-heatmap/issues"
+  },
+  "homepage": "https://github.com/digitalcolony/activity-heatmap#readme",
+  "dependencies": {
+    "mysql": "^2.15.0"
+  }
+}
