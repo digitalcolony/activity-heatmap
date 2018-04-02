@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description":
     "Sandbox to create Activity Heatmap charts using [Cal-Heatmap](https://github.com/wa0x6e/cal-heatmap).",
-  "main": "index.html",
+  "main": "activity.html",
   "scripts": {
-    "start": "harp server --port $PORT"
+    "start": "",
+    "test": ""
   },
   "repository": {
     "type": "git",
