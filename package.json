@@ -1,10 +1,11 @@
 {
   "name": "activity-heatmap",
   "version": "1.0.0",
-  "description": "Sandbox to create Activity Heatmap charts using [Cal-Heatmap](https://github.com/wa0x6e/cal-heatmap).",
-  "main": "index.js",
+  "description":
+    "Sandbox to create Activity Heatmap charts using [Cal-Heatmap](https://github.com/wa0x6e/cal-heatmap).",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "harp server --port $PORT"
   },
   "repository": {
     "type": "git",
